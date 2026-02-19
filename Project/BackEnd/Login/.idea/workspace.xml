@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c31c732c-594f-481e-b718-0feed871f06b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="37Z54sggq6URMSnFOgoBgpDnU1w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.Login [clean,install].executor": "Run",
+    "Maven.Login [clean,validate,compile,install].executor": "Run",
+    "Maven.Login [clean].executor": "Run",
+    "Maven.Login [compile].executor": "Run",
+    "Maven.Login [deploy].executor": "Run",
+    "Maven.Login [install].executor": "Run",
+    "Maven.Login [package].executor": "Run",
+    "Maven.Login [site].executor": "Run",
+    "Maven.Login [test].executor": "Run",
+    "Maven.Login [validate].executor": "Run",
+    "Maven.Login [verify].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.LoginApplication.executor": "Run",
+    "ignore.preview.features.used": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Work/Project/BackEnd/Management",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="LoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Login" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="project.login.LoginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.26775.15" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.26775.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c31c732c-594f-481e-b718-0feed871f06b" name="Changes" comment="" />
+      <created>1767097568539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1767097568539</updated>
+      <workItem from="1767097569602" duration="23289000" />
+      <workItem from="1767528435117" duration="4732000" />
+      <workItem from="1767711158351" duration="920000" />
+      <workItem from="1767783885721" duration="17578000" />
+      <workItem from="1767823444161" duration="743000" />
+      <workItem from="1767825009166" duration="914000" />
+      <workItem from="1767826194323" duration="169000" />
+      <workItem from="1767826476261" duration="1691000" />
+      <workItem from="1767870956582" duration="18073000" />
+      <workItem from="1767917650201" duration="4783000" />
+      <workItem from="1767922768028" duration="5514000" />
+      <workItem from="1768374331121" duration="2970000" />
+      <workItem from="1768819723068" duration="18407000" />
+      <workItem from="1770663584405" duration="436000" />
+      <workItem from="1770669488353" duration="588000" />
+      <workItem from="1770670088825" duration="740000" />
+      <workItem from="1770670858526" duration="234000" />
+      <workItem from="1770671108431" duration="293000" />
+      <workItem from="1770671432189" duration="2790000" />
+      <workItem from="1770675389552" duration="127000" />
+      <workItem from="1770675997151" duration="70000" />
+      <workItem from="1770676313552" duration="330000" />
+      <workItem from="1770676772797" duration="86000" />
+      <workItem from="1770676984396" duration="1178000" />
+      <workItem from="1770678476921" duration="14227000" />
+      <workItem from="1770752132137" duration="10219000" />
+      <workItem from="1771019958584" duration="6448000" />
+      <workItem from="1771083148047" duration="9750000" />
+      <workItem from="1771267261264" duration="1099000" />
+      <workItem from="1771274252918" duration="3969000" />
+      <workItem from="1771498527667" duration="1873000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

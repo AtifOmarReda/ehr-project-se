@@ -1,0 +1,33 @@
+<div class="dashboard-container">
+    <nav class="navbar">
+        <span class="logo">Mon Dashboard</span>
+        <button class="logout-btn" (click)="onLogout()">
+            <span class="icon">Logout</span>
+        </button>
+    </nav>
+
+    <main class="content">
+        <header class="welcome-header">
+            <h1>Bienvenue sur votre espace</h1>
+            <p>Voici les informations de votre session actuelle :</p>
+        </header>
+
+        <div class="token-grid">
+            <div class="token-card">
+                <h3>Access Token</h3>
+                <div class="token-value">
+                    <code>{{ accessToken || 'Aucun token trouvé' }}</code>
+                </div>
+                <button class="copy-btn" (click)="copyToClipboard(accessToken)">Copier</button>
+            </div>
+
+            <div class="token-card">
+                <h3>Refresh Token</h3>
+                <div class="token-value">
+                    <code>{{ refreshToken || 'Aucun token trouvé' }}</code>
+                </div>
+                <button class="copy-btn" (click)="copyToClipboard(refreshToken)">Copier</button>
+            </div>
+        </div>
+    </main>
+</div>
