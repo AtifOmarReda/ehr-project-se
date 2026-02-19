@@ -1,0 +1,8 @@
+Project\management\entities\Country.class
+Project\management\entities\FamilySituation.class
+Project\management\repositories\PatientRepository.class
+Project\management\entities\Patient$PatientBuilder.class
+Project\management\entities\Sexe.class
+Project\management\ManagementApplication.class
+Project\management\controllers\PatientController.class
+Project\management\entities\Patient.class

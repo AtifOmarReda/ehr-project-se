@@ -4,7 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c31c732c-594f-481e-b718-0feed871f06b" name="Changes" comment="" />
+    <list default="true" id="c31c732c-594f-481e-b718-0feed871f06b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common_http.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common_http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common_http.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common_http.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_core.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_core.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_forms.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_forms.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_platform-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_platform-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_platform-browser.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_platform-browser.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_router.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-63V537XR.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-63V537XR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-63V537XR.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-63V537XR.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-J7E7XU2A.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-J7E7XU2A.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-J7E7XU2A.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-J7E7XU2A.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-PJVWDKLX.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-PJVWDKLX.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-PJVWDKLX.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-PJVWDKLX.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-QFUUJDY3.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-QFUUJDY3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-QFUUJDY3.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-QFUUJDY3.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VMCNKVZC.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VMCNKVZC.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VMCNKVZC.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VMCNKVZC.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VU7AIJWC.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VU7AIJWC.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VU7AIJWC.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VU7AIJWC.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/rxjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/rxjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/rxjs.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/rxjs.js.map" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +56,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -34,40 +75,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.Login [clean,install].executor": "Run",
-    "Maven.Login [clean,validate,compile,install].executor": "Run",
-    "Maven.Login [clean].executor": "Run",
-    "Maven.Login [compile].executor": "Run",
-    "Maven.Login [deploy].executor": "Run",
-    "Maven.Login [install].executor": "Run",
-    "Maven.Login [package].executor": "Run",
-    "Maven.Login [site].executor": "Run",
-    "Maven.Login [test].executor": "Run",
-    "Maven.Login [validate].executor": "Run",
-    "Maven.Login [verify].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.LoginApplication.executor": "Run",
-    "ignore.preview.features.used": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Work/Project/BackEnd/Management",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.Login [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Login [clean,validate,compile,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Login [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Login [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Login [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Login [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Login [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Login [site].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Login [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Login [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Login [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.LoginApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Work/GitProject/ehr-project-se/Project/BackEnd/Management&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="LoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -125,6 +168,7 @@
       <workItem from="1771267261264" duration="1099000" />
       <workItem from="1771274252918" duration="3969000" />
       <workItem from="1771498527667" duration="1873000" />
+      <workItem from="1771502614165" duration="2692000" />
     </task>
     <servers />
   </component>
