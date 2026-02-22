@@ -1,3 +1,12 @@
+server:
+  port: 9082 # Changement du port (optionnel, mais courant pour le HTTPS)
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: postgres
+    key-store-type: PKCS12
+    key-alias: springboot
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/login
@@ -11,11 +20,12 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8080/auth # URL de ton micro-service d'auth
+          issuer-uri: https://localhost:9081/auth # URL de ton micro-service d'auth
+
 jwt:
   secret: ${JWT_SECRET}
-#  access-expiration-ms: 900000      # 15 minutes
-#  refresh-expiration-ms: 1209600000 # 14 jours
-#server:
-#  ssl:
-#    enabled: true
+
+services:
+  auth:
+    url: https://localhost:9081/internal/auth
+    check-blacklist-endpoint: /is-blacklisted

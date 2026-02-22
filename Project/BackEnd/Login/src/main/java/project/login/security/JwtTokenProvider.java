@@ -33,7 +33,7 @@ public class JwtTokenProvider {
     }
 
     public String generateAccessTokenFromUsername(String username) {
-        return Jwts.builder().setSubject(username).setId(UUID.randomUUID().toString()) // 🔥 jti
+        return Jwts.builder().setSubject(username).setId(UUID.randomUUID().toString()) // jti
                 .setIssuedAt(new Date()).setExpiration(new Date(System.currentTimeMillis() + accessTokenExpirationMs)).signWith(getSigningKey(), SignatureAlgorithm.HS256).compact();
     }
 

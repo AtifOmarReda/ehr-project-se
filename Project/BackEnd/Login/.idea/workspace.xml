@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c31c732c-594f-481e-b718-0feed871f06b" name="Changes" comment="" />
+    <list default="true" id="c31c732c-594f-481e-b718-0feed871f06b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/login/controllers/InternalAuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/RedirectionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/RestClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/RemoteBlacklistService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/controllers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/security/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/security/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/dto/PatientDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/dto/PatientDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/resources/application.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +40,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -47,15 +72,19 @@
     &quot;Maven.Login [test].executor&quot;: &quot;Run&quot;,
     &quot;Maven.Login [validate].executor&quot;: &quot;Run&quot;,
     &quot;Maven.Login [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Management [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Management [install].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Spring Boot.LoginApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ManagementApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Project/BackEnd/Login&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Work/GitProject/ehr-project-se/Project/BackEnd/Management&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -68,7 +97,14 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ManagementApplication">
     <configuration name="LoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="Login" />
@@ -77,6 +113,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Management" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="Project.management.ManagementApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Project.management.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ManagementApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -129,10 +183,24 @@
       <workItem from="1771690035462" duration="1984000" />
       <workItem from="1771693731879" duration="123000" />
       <workItem from="1771694153560" duration="13055000" />
+      <workItem from="1771744964009" duration="5467000" />
+      <workItem from="1771750533682" duration="16176000" />
+      <workItem from="1771768144517" duration="35000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

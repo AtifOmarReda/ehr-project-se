@@ -14,7 +14,6 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import project.login.security.JwtAuthenticationEntryPoint;
 import project.login.security.JwtTokenFilter;
 
-
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
@@ -35,6 +34,7 @@ public class SecurityConfig {
 //                .exceptionHandling(ex -> ex.authenticationEntryPoint(unauthorizedHandler))
 //                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 //                .authorizeHttpRequests(auth -> auth
+//                        .requestMatchers("/internal/auth/**").permitAll()
 //                        .requestMatchers("/auth/login", "/auth/refresh").permitAll()
 //                        .requestMatchers("/auth/logout").authenticated()
 //                        .requestMatchers("/admin/**").hasRole("ADMIN")
@@ -56,18 +56,20 @@ public class SecurityConfig {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 // Gestion des autorisations
                 .authorizeHttpRequests(auth -> auth
-                        // Accès Public
+                        // Accès Interne (Appel depuis le micro-service Management)
+                        .requestMatchers("/internal/auth/**").permitAll()
+                        // Accès Public (Login et Refresh)
                         .requestMatchers("/auth/login", "/auth/refresh").permitAll()
+                        // Accès Authentifié (Logout)
                         .requestMatchers("/auth/logout").authenticated()
-                        // Accès Admin uniquement
+                        // Accès par Rôles
                         .requestMatchers("/admin/**").hasRole("ADMIN")
-                        // Accès Docteur uniquement
                         .requestMatchers("/doctor/**").hasRole("DOCTOR")
-                        // Accès Réceptionniste uniquement
                         .requestMatchers("/reception/**").hasRole("RECEPTIONIST")
-                        // Accès Partagé (ex: Patient info accessible par Docteur et Réceptionniste)
+                        // Accès Partagés
                         .requestMatchers("/medical-records/**").hasAnyRole("DOCTOR", "ADMIN")
                         .requestMatchers("/appointments/**").hasAnyRole("RECEPTIONIST", "DOCTOR", "ADMIN")
+                        // Tout le reste doit être authentifié
                         .anyRequest().authenticated()
                 );
         http.addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);

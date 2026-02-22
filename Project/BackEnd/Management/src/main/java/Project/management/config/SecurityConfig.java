@@ -6,42 +6,59 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 
-import Project.management.security.JwtFilter;
-import lombok.RequiredArgsConstructor;
+import Project.management.security.JwtTokenFilter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import Project.management.security.JwtAuthenticationEntryPoint;
 
 @Configuration
 @EnableWebSecurity
-@RequiredArgsConstructor
 public class SecurityConfig {
 
+    private final JwtAuthenticationEntryPoint unauthorizedHandler;
+    private final JwtTokenFilter jwtTokenFilter;
+
+    public SecurityConfig(JwtAuthenticationEntryPoint unauthorizedHandler, JwtTokenFilter jwtTokenFilter) {
+        this.unauthorizedHandler = unauthorizedHandler;
+        this.jwtTokenFilter = jwtTokenFilter;
+    }
+
+    // Configuration pour http
 //    @Bean
-//    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-//        http.csrf(csrf -> csrf.disable()) // Désactivé car on utilise du JWT (stateless)
-//                .authorizeHttpRequests(auth -> auth.requestMatchers("/patients/**").authenticated() // Protège le CRUD
-//                        .anyRequest().permitAll()).oauth2ResourceServer(oauth2 -> oauth2.jwt(jwt -> {
-//                })); // Active la validation JWT
+//    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+//        http
+//                .csrf(csrf -> csrf.disable())
+//                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+//                .authorizeHttpRequests(auth -> auth
+//                        .requestMatchers("/patients/**").authenticated()
+//                        .anyRequest().permitAll()
+//                );
+//        http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 //        return http.build();
 //    }
 
-    private final JwtFilter jwtFilter;
-
+    // Configuration pour https
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
+                .requiresChannel(channel -> channel.anyRequest().requiresSecure())
+                .portMapper(portMapper -> portMapper.http(8082).mapsTo(9082))
                 .csrf(csrf -> csrf.disable())
-                // Très important : pas de session côté serveur (Stateless)
+                .exceptionHandling(ex -> ex.authenticationEntryPoint(unauthorizedHandler))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                // Gestion des autorisations
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/patients/**").authenticated() // On protège nos routes
+                        // Accès Public
+                        .requestMatchers("/patients/**").authenticated()
                         .anyRequest().permitAll()
                 );
-
-        // On injecte notre filtre AVANT le filtre standard de Spring
-        http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
-
+        http.addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
+
+//    @Bean
+//    public RestTemplate restTemplate() {
+//        return new RestTemplate();
+//    }
 
 }
