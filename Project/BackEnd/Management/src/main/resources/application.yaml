@@ -12,8 +12,8 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8080/auth # URL de ton micro-service d'auth
-#jwt:
-#  secret: ${JWT_SECRET}
+jwt:
+  secret: ${JWT_SECRET}
 #  access-expiration-ms: 900000      # 15 minutes
 #  refresh-expiration-ms: 1209600000 # 14 jours
 #server:

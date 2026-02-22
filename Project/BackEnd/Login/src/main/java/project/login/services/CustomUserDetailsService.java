@@ -1,9 +1,11 @@
 package project.login.services;
 
 import lombok.AllArgsConstructor;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import project.login.entities.User;
 import project.login.repositories.UserRepository;
-import org.springframework.security.core.userdetails.*;
 import org.springframework.stereotype.Service;
 
 @AllArgsConstructor

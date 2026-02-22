@@ -14,6 +14,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import project.login.security.JwtAuthenticationEntryPoint;
 import project.login.security.JwtTokenFilter;
 
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
@@ -26,9 +27,49 @@ public class SecurityConfig {
         this.jwtTokenFilter = jwtTokenFilter;
     }
 
+    // Configuration pour http
+//    @Bean
+//    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+//        http
+//                .csrf(csrf -> csrf.disable())
+//                .exceptionHandling(ex -> ex.authenticationEntryPoint(unauthorizedHandler))
+//                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+//                .authorizeHttpRequests(auth -> auth
+//                        .requestMatchers("/auth/login", "/auth/refresh").permitAll()
+//                        .requestMatchers("/auth/logout").authenticated()
+//                        .requestMatchers("/admin/**").hasRole("ADMIN")
+//                        .requestMatchers("/user/**").hasAnyRole("USER", "ADMIN")
+//                        .anyRequest().authenticated()
+//                );
+//        http.addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);
+//        return http.build();
+//    }
+
+    // Configuration pour https
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf(csrf -> csrf.disable()).exceptionHandling(ex -> ex.authenticationEntryPoint(unauthorizedHandler)).sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)).authorizeHttpRequests(auth -> auth.requestMatchers("/auth/login", "/auth/refresh").permitAll().requestMatchers("/auth/logout").authenticated().requestMatchers("/admin/**").hasRole("ADMIN").requestMatchers("/user/**").hasAnyRole("USER", "ADMIN").anyRequest().authenticated());
+        http
+                .requiresChannel(channel -> channel.anyRequest().requiresSecure())
+                .portMapper(portMapper -> portMapper.http(8081).mapsTo(9081))
+                .csrf(csrf -> csrf.disable())
+                .exceptionHandling(ex -> ex.authenticationEntryPoint(unauthorizedHandler))
+                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                // Gestion des autorisations
+                .authorizeHttpRequests(auth -> auth
+                        // Accès Public
+                        .requestMatchers("/auth/login", "/auth/refresh").permitAll()
+                        .requestMatchers("/auth/logout").authenticated()
+                        // Accès Admin uniquement
+                        .requestMatchers("/admin/**").hasRole("ADMIN")
+                        // Accès Docteur uniquement
+                        .requestMatchers("/doctor/**").hasRole("DOCTOR")
+                        // Accès Réceptionniste uniquement
+                        .requestMatchers("/reception/**").hasRole("RECEPTIONIST")
+                        // Accès Partagé (ex: Patient info accessible par Docteur et Réceptionniste)
+                        .requestMatchers("/medical-records/**").hasAnyRole("DOCTOR", "ADMIN")
+                        .requestMatchers("/appointments/**").hasAnyRole("RECEPTIONIST", "DOCTOR", "ADMIN")
+                        .anyRequest().authenticated()
+                );
         http.addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }

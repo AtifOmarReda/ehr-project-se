@@ -1,5 +1,6 @@
 package Project.management.services;
 
+import Project.management.dto.PatientDTO;
 import Project.management.entities.Patient;
 import Project.management.repositories.PatientRepository;
 import lombok.RequiredArgsConstructor;
@@ -15,7 +16,29 @@ public class PatientService {
 
     private final PatientRepository patientRepository;
 
-    public Patient savePatient(Patient patient) {
+    // Méthode de conversion (Mappage)
+    private Patient mapToEntity(PatientDTO dto) {
+        return Patient.builder()
+                .firstName(dto.getFirstName())
+                .lastName(dto.getLastName())
+                .sexe(dto.getSexe())
+                .dateBirth(dto.getDateBirth())
+                .placeBirth(dto.getPlaceBirth())
+                .familySituation(dto.getFamilySituation())
+                .fatherName(dto.getFatherName())
+                .motherName(dto.getMotherName())
+                .address(dto.getAddress())
+                .country(dto.getCountry())
+                .department(dto.getDepartment())
+                .county(dto.getCounty())
+                .tel1(dto.getTel1())
+                .tel2(dto.getTel2())
+                .email(dto.getEmail())
+                .build();
+    }
+
+    public Patient savePatient(PatientDTO patientDTO) {
+        Patient patient = mapToEntity(patientDTO);
         return patientRepository.save(patient);
     }
 
@@ -28,26 +51,26 @@ public class PatientService {
     }
 
     @Transactional
-    public Patient updatePatient(Long id, Patient patientDetails) {
-        return patientRepository.findById(id).map(existingPatient -> {
-            // On met à jour les champs nécessaires (éviter de changer l'ID)
-            existingPatient.setFirstName(patientDetails.getFirstName());
-            existingPatient.setLastName(patientDetails.getLastName());
-            existingPatient.setSexe(patientDetails.getSexe());
-            existingPatient.setDateBirth(patientDetails.getDateBirth());
-            existingPatient.setPlaceBirth(patientDetails.getPlaceBirth());
-            existingPatient.setFamilySituation(patientDetails.getFamilySituation());
-            existingPatient.setFatherName(patientDetails.getFatherName());
-            existingPatient.setMotherName(patientDetails.getMotherName());
-            existingPatient.setAddress(patientDetails.getAddress());
-            existingPatient.setCountry(patientDetails.getCountry());
-            existingPatient.setDepartment(patientDetails.getDepartment());
-            existingPatient.setCounty(patientDetails.getCounty());
-            existingPatient.setTel1(patientDetails.getTel1());
-            existingPatient.setTel2(patientDetails.getTel2());
-            existingPatient.setEmail(patientDetails.getEmail());
-            return patientRepository.save(existingPatient);
-        }).orElseThrow(() -> new RuntimeException("Patient not found with ID : " + id));
+    public Patient updatePatient(Long id, PatientDTO dto) {
+        return patientRepository.findById(id).map(existing -> {
+            existing.setFirstName(dto.getFirstName());
+            existing.setLastName(dto.getLastName());
+            existing.setSexe(dto.getSexe());
+            existing.setDateBirth(dto.getDateBirth());
+            existing.setPlaceBirth(dto.getPlaceBirth());
+            existing.setFamilySituation(dto.getFamilySituation());
+            existing.setFatherName(dto.getFatherName());
+            existing.setMotherName(dto.getMotherName());
+            existing.setAddress(dto.getAddress());
+            existing.setCountry(dto.getCountry());
+            existing.setDepartment(dto.getDepartment());
+            existing.setCounty(dto.getCounty());
+            existing.setTel1(dto.getTel1());
+            existing.setTel2(dto.getTel2());
+            existing.setEmail(dto.getEmail());
+            // ... mettre à jour les autres champs
+            return patientRepository.save(existing);
+        }).orElseThrow(() -> new RuntimeException("Patient not found"));
     }
 
     public void deletePatient(Long id) {

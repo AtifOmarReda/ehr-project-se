@@ -1,3 +1,12 @@
+server:
+  port: 9081 # Changement du port (optionnel, mais courant pour le HTTPS)
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: postgres
+    key-store-type: PKCS12
+    key-alias: springboot
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/login
@@ -7,10 +16,8 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+
 jwt:
   secret: ${JWT_SECRET}
   access-expiration-ms: 900000      # 15 minutes
   refresh-expiration-ms: 1209600000 # 14 jours
-#server:
-#  ssl:
-#    enabled: true

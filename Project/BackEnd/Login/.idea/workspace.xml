@@ -4,45 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c31c732c-594f-481e-b718-0feed871f06b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common_http.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common_http.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common_http.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_common_http.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_core.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_core.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_forms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_forms.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_forms.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_platform-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_platform-browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_platform-browser.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_platform-browser.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/@angular_router.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-63V537XR.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-63V537XR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-63V537XR.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-63V537XR.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-J7E7XU2A.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-J7E7XU2A.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-J7E7XU2A.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-J7E7XU2A.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-PJVWDKLX.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-PJVWDKLX.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-PJVWDKLX.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-PJVWDKLX.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-QFUUJDY3.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-QFUUJDY3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-QFUUJDY3.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-QFUUJDY3.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VMCNKVZC.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VMCNKVZC.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VMCNKVZC.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VMCNKVZC.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VU7AIJWC.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VU7AIJWC.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VU7AIJWC.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/chunk-VU7AIJWC.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/rxjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/rxjs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/rxjs.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/Login/.angular/cache/21.0.4/Login/vite/deps/rxjs.js.map" afterDir="false" />
-    </list>
+    <list default="true" id="c31c732c-594f-481e-b718-0feed871f06b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,9 +18,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -93,12 +52,10 @@
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spring Boot.LoginApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Work/GitProject/ehr-project-se/Project/BackEnd/Management&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Project/BackEnd/Login&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -167,8 +124,11 @@
       <workItem from="1771083148047" duration="9750000" />
       <workItem from="1771267261264" duration="1099000" />
       <workItem from="1771274252918" duration="3969000" />
-      <workItem from="1771498527667" duration="1873000" />
-      <workItem from="1771502614165" duration="2692000" />
+      <workItem from="1771367329121" duration="506000" />
+      <workItem from="1771675917560" duration="9175000" />
+      <workItem from="1771690035462" duration="1984000" />
+      <workItem from="1771693731879" duration="123000" />
+      <workItem from="1771694153560" duration="13055000" />
     </task>
     <servers />
   </component>

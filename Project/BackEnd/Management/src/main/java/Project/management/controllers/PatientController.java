@@ -1,5 +1,6 @@
 package Project.management.controllers;
 
+import Project.management.dto.PatientDTO;
 import Project.management.services.PatientService;
 import org.springframework.web.bind.annotation.*;
 import lombok.RequiredArgsConstructor;
@@ -22,8 +23,8 @@ public class PatientController {
 
     // CREATE
     @PostMapping
-    public ResponseEntity<Patient> createPatient(@Valid @RequestBody Patient patient) {
-        return new ResponseEntity<>(patientService.savePatient(patient), HttpStatus.CREATED);
+    public ResponseEntity<Patient> create(@Valid @RequestBody PatientDTO patientDTO) {
+        return new ResponseEntity<>(patientService.savePatient(patientDTO), HttpStatus.CREATED);
     }
 
     // READ ALL
@@ -42,12 +43,8 @@ public class PatientController {
 
     // UPDATE
     @PutMapping("/{id}")
-    public ResponseEntity<Patient> update(@PathVariable Long id, @Valid @RequestBody Patient patient) {
-        try {
-            return ResponseEntity.ok(patientService.updatePatient(id, patient));
-        } catch (RuntimeException e) {
-            return ResponseEntity.notFound().build();
-        }
+    public ResponseEntity<Patient> update(@PathVariable Long id, @Valid @RequestBody PatientDTO dto) {
+        return ResponseEntity.ok(patientService.updatePatient(id, dto));
     }
 
     // DELETE
