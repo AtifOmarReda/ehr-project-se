@@ -5,60 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c31c732c-594f-481e-b718-0feed871f06b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Management/target/Management-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/Management-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/ManagementApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/component/BasicMedicalHistoryInfoCreator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/component/GynecoObstetricCreator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/component/MedicalHistoryInfoCreator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/component/MedicalHistoryInfoFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/config/RedirectionConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/config/RestClientConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/config/SecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/controllers/MedicalHistoryInfoController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/controllers/PatientController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/dto/MedicalHistoryInfoDTO$MedicalHistoryInfoDTOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/dto/MedicalHistoryInfoDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/dto/PatientDTO$PatientDTOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/dto/PatientDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/BasicMedicalHistoryInfo$BasicMedicalHistoryInfoBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/BasicMedicalHistoryInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/Country.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/FamilySituation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/GynecoObstetric$GynecoObstetricBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/GynecoObstetric.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/MedicalHistory$MedicalHistoryBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/MedicalHistory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/MedicalHistoryInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/MedicalHistoryInfoType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/Patient$PatientBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/Patient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/Sexe.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/exceptions/ErrorResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/exceptions/GlobalExceptionHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/repositories/MedicalHistoryInfoRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/repositories/PatientRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/security/JwtAuthenticationEntryPoint.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/security/JwtTokenFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/security/JwtTokenProvider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/services/MedicalHistoryInfoService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/services/PatientService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/services/RemoteBlacklistService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/classes/keystore.p12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/surefire-reports/Project.management.ManagementApplicationTests.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/surefire-reports/TEST-Project.management.ManagementApplicationTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/target/test-classes/Project/management/ManagementApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/GynecoObstetricCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/GynecoObstetricCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/MedicalHistoryInfoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/MedicalHistoryInfoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/dto/MedicalHistoryInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/dto/MedicalHistoryInfoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/GynecoObstetric.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/GynecoObstetric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/AppointmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/dto/AppointmentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/Appointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/repositories/AppointmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/AppointmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/Management-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/Management-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/ManagementApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/component/BasicMedicalHistoryInfoCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/component/GynecoObstetricCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/component/MedicalHistoryInfoCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/component/MedicalHistoryInfoFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/config/RedirectionConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/config/RestClientConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/controllers/MedicalHistoryInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/controllers/PatientController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/dto/MedicalHistoryInfoDTO$MedicalHistoryInfoDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/dto/MedicalHistoryInfoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/dto/PatientDTO$PatientDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/dto/PatientDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/BasicMedicalHistoryInfo$BasicMedicalHistoryInfoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/BasicMedicalHistoryInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/FamilySituation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/GynecoObstetric$GynecoObstetricBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/GynecoObstetric.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/MedicalHistoryInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/MedicalHistoryInfoType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/Patient$PatientBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/Patient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/Sexe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/exceptions/ErrorResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/exceptions/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/repositories/MedicalHistoryInfoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/repositories/PatientRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/security/JwtAuthenticationEntryPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/security/JwtTokenFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/security/JwtTokenProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/services/MedicalHistoryInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/services/PatientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/Project/management/services/RemoteBlacklistService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/classes/keystore.p12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/surefire-reports/Project.management.ManagementApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/surefire-reports/TEST-Project.management.ManagementApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/target/test-classes/Project/management/ManagementApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +115,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.LoginApplication.executor": "Run",
     "Spring Boot.ManagementApplication.executor": "Run",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "ignore.preview.features.used": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Work/GitProject/ehr-project-se/Project/BackEnd/Management",
@@ -223,6 +224,7 @@
       <workItem from="1771830418830" duration="838000" />
       <workItem from="1771831321446" duration="5976000" />
       <workItem from="1771837678819" duration="327000" />
+      <workItem from="1771843810468" duration="9249000" />
     </task>
     <servers />
   </component>

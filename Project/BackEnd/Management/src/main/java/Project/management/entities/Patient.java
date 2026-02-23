@@ -1,6 +1,15 @@
 package Project.management.entities;
 
-import jakarta.persistence.*;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.Email;
 import lombok.Getter;
 import lombok.Setter;
@@ -75,5 +84,9 @@ public class Patient {
 
     @OneToMany(mappedBy = "patient")
     private List<MedicalHistoryInfo> medicalHistoryInfos;
+
+    @OneToMany(mappedBy = "patient")
+    @JsonManagedReference
+    private List<Appointment> appointments;
 
 }
