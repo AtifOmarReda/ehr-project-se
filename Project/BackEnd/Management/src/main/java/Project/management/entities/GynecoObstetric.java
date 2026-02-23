@@ -13,16 +13,16 @@ import lombok.*;
 public class GynecoObstetric extends MedicalHistoryInfo {
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private MedicalHistoryInfoType type;
 
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private Boolean dysmenorrhea;
 
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private Boolean dyspareunia;
 
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private Boolean endometriosis;
 
     @Column(nullable = false, length = 50)
@@ -31,7 +31,7 @@ public class GynecoObstetric extends MedicalHistoryInfo {
     @Column(nullable = false, length = 50)
     private Boolean salpingitis;
 
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private Boolean urogenitalTuborculosis;
 
     @Column(nullable = false, length = 50)

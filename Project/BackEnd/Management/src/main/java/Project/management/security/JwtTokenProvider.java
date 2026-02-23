@@ -4,28 +4,19 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
 
 @Component
 public class JwtTokenProvider {
 
-    @Value("${jwt.secret}") // Doit être la MÊME clé que dans ton service Auth
+    @Value("${jwt.secret}")
     private String jwtSecret;
 
     private Key getSigningKey() {
         return Keys.hmacShaKeyFor(jwtSecret.getBytes(StandardCharsets.UTF_8));
     }
-
-//    public boolean validateJwtToken(String authToken) {
-//        try {
-//            SecretKey key = Keys.hmacShaKeyFor(jwtSecret.getBytes(StandardCharsets.UTF_8));
-//            Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(authToken);
-//            return true;
-//        } catch (Exception e) {
-//            return false;
-//        }
-//    }
 
     public boolean validateToken(String token) {
         try {
@@ -35,12 +26,6 @@ public class JwtTokenProvider {
             return false;
         }
     }
-
-//    public String getUserNameFromJwtToken(String token) {
-//        SecretKey key = Keys.hmacShaKeyFor(jwtSecret.getBytes(StandardCharsets.UTF_8));
-//        return Jwts.parserBuilder().setSigningKey(key).build()
-//                .parseClaimsJws(token).getBody().getSubject();
-//    }
 
     public String getUsernameFromToken(String token) {
         return Jwts.parserBuilder().setSigningKey(getSigningKey()).build().parseClaimsJws(token).getBody().getSubject();

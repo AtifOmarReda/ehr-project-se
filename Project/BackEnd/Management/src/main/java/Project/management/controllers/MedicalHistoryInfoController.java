@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/medical_history_info")
+@RequestMapping("/medical-history-info")
 @RequiredArgsConstructor
 public class MedicalHistoryInfoController {
 
@@ -30,9 +30,7 @@ public class MedicalHistoryInfoController {
 
     @GetMapping("/{id}")
     public ResponseEntity<MedicalHistoryInfo> getOne(@PathVariable Long id) {
-        return medicalHistoryInfoService.getMedicalHistoryInfoById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        return medicalHistoryInfoService.getMedicalHistoryInfoById(id).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
     }
 
     @PutMapping("/{id}")

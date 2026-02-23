@@ -3,7 +3,6 @@ package Project.management.services;
 import Project.management.component.MedicalHistoryInfoFactory;
 import Project.management.dto.MedicalHistoryInfoDTO;
 import Project.management.entities.MedicalHistoryInfo;
-import Project.management.entities.Patient;
 import Project.management.repositories.MedicalHistoryInfoRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -19,7 +18,7 @@ public class MedicalHistoryInfoService {
     private final MedicalHistoryInfoFactory medicalHistoryInfoFactory;
 
     public MedicalHistoryInfo saveMedicalHistoryInfo(MedicalHistoryInfoDTO dto) {
-         return medicalHistoryInfoRepository.save(medicalHistoryInfoFactory.create(dto));
+        return medicalHistoryInfoRepository.save(medicalHistoryInfoFactory.create(dto));
     }
 
     public List<MedicalHistoryInfo> getAllMedicalHistoryInfos() {

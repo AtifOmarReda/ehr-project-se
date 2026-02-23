@@ -5,27 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c31c732c-594f-481e-b718-0feed871f06b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/login/controllers/InternalAuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/RedirectionConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/RestClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/RemoteBlacklistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/security/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/security/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/BasicMedicalHistoryInfoCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/BasicMedicalHistoryInfoCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/GynecoObstetricCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/GynecoObstetricCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/MedicalHistoryInfoCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/MedicalHistoryInfoCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/MedicalHistoryInfoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/MedicalHistoryInfoFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/dto/PatientDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/dto/PatientDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/MedicalHistoryInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/MedicalHistoryInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/BasicMedicalHistoryInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/BasicMedicalHistoryInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/GynecoObstetric.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/GynecoObstetric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/MedicalHistoryInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/MedicalHistoryInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/repositories/MedicalHistoryInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/repositories/MedicalHistoryInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/repositories/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/repositories/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/MedicalHistoryInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/MedicalHistoryInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/RemoteBlacklistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/RemoteBlacklistService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +181,9 @@
       <workItem from="1771744964009" duration="5467000" />
       <workItem from="1771750533682" duration="16176000" />
       <workItem from="1771768144517" duration="35000" />
+      <workItem from="1771768420322" duration="43000" />
+      <workItem from="1771830418830" duration="838000" />
+      <workItem from="1771831321446" duration="5976000" />
     </task>
     <servers />
   </component>

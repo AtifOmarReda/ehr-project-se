@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
+@Table(name = "medical_history_info")
 @Setter
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class MedicalHistoryInfo {
