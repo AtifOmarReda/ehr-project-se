@@ -3,7 +3,9 @@ package Project.management.services;
 import Project.management.component.MedicalHistoryInfoFactory;
 import Project.management.dto.MedicalHistoryInfoDTO;
 import Project.management.entities.MedicalHistoryInfo;
+import Project.management.entities.Patient;
 import Project.management.repositories.MedicalHistoryInfoRepository;
+import Project.management.repositories.PatientRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -15,10 +17,13 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class MedicalHistoryInfoService {
     private final MedicalHistoryInfoRepository medicalHistoryInfoRepository;
+    private final PatientRepository patientRepository;
     private final MedicalHistoryInfoFactory medicalHistoryInfoFactory;
 
     public MedicalHistoryInfo saveMedicalHistoryInfo(MedicalHistoryInfoDTO dto) {
-        return medicalHistoryInfoRepository.save(medicalHistoryInfoFactory.create(dto));
+        Patient patient = patientRepository.findById(dto.getPatientId())
+                .orElseThrow(() -> new RuntimeException("Patient does not exist"));
+        return medicalHistoryInfoRepository.save(medicalHistoryInfoFactory.create(dto, patient));
     }
 
     public List<MedicalHistoryInfo> getAllMedicalHistoryInfos() {

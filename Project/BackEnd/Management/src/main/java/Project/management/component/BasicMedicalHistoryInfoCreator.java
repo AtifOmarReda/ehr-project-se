@@ -4,16 +4,19 @@ import Project.management.dto.MedicalHistoryInfoDTO;
 import Project.management.entities.BasicMedicalHistoryInfo;
 import Project.management.entities.GynecoObstetric;
 import Project.management.entities.MedicalHistoryInfo;
+import Project.management.entities.Patient;
 import org.springframework.stereotype.Component;
 
 @Component
 public class BasicMedicalHistoryInfoCreator implements MedicalHistoryInfoCreator{
     @Override
-    public MedicalHistoryInfo create(MedicalHistoryInfoDTO dto) {
-        return BasicMedicalHistoryInfo.builder()
-                                    .label(dto.getLabel())
-                                    .type(dto.getType())
-                                    .build();
+    public MedicalHistoryInfo create(MedicalHistoryInfoDTO dto, Patient patient) {
+        BasicMedicalHistoryInfo basicMedicalHistoryInfo = BasicMedicalHistoryInfo.builder()
+                .label(dto.getLabel())
+                .type(dto.getType())
+                .build();
+        basicMedicalHistoryInfo.setPatient(patient);
+        return basicMedicalHistoryInfo;
     }
 
     @Override

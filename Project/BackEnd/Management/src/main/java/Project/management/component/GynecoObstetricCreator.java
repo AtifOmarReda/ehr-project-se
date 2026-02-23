@@ -3,15 +3,15 @@ package Project.management.component;
 import Project.management.dto.MedicalHistoryInfoDTO;
 import Project.management.entities.GynecoObstetric;
 import Project.management.entities.MedicalHistoryInfo;
+import Project.management.entities.Patient;
 import org.springframework.stereotype.Component;
 
 @Component
 public class GynecoObstetricCreator implements MedicalHistoryInfoCreator{
 
     @Override
-    public MedicalHistoryInfo create(MedicalHistoryInfoDTO dto) {
-        System.out.println(dto);
-        return GynecoObstetric.builder()
+    public MedicalHistoryInfo create(MedicalHistoryInfoDTO dto, Patient patient) {
+        GynecoObstetric gynecoObstetric =  GynecoObstetric.builder()
                      .dysmenorrhea(dto.getDysmenorrhea())
                      .dyspareunia(dto.getDyspareunia())
                      .endometriosis(dto.getEndometriosis())
@@ -34,6 +34,8 @@ public class GynecoObstetricCreator implements MedicalHistoryInfoCreator{
                      .bcg(dto.getBcg())
                      .type(dto.getType())
                      .build();
+        gynecoObstetric.setPatient(patient);
+        return gynecoObstetric;
     }
 
     @Override

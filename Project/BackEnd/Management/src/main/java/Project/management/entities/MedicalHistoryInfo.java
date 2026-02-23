@@ -14,5 +14,6 @@ public abstract class MedicalHistoryInfo {
     private Long id;
 
     @ManyToOne
-    private MedicalHistory medicalHistory;
+    @JoinColumn(name = "patient_id")
+    private Patient patient;
 }

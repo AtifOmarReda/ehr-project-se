@@ -1,7 +1,11 @@
 package Project.management.dto;
 
 import Project.management.entities.MedicalHistoryInfoType;
+import Project.management.entities.Patient;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Column;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -60,7 +64,8 @@ public class MedicalHistoryInfoDTO {
     @Size(max = 50)
     private String abortion;
 
-    @Size(max = 200)
+    @JsonProperty("cSection")
+    @Size(max = 50)
     private String cSection;
 
     @Size(max = 50)
@@ -73,5 +78,7 @@ public class MedicalHistoryInfoDTO {
     private String previousPregnancies;
 
     private Boolean bcg;
+
+    private long patientId;
 
 }
