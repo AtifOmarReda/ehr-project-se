@@ -19,7 +19,7 @@ public class MedicalHistoryInfoService {
     private final MedicalHistoryInfoFactory medicalHistoryInfoFactory;
 
     public MedicalHistoryInfo saveMedicalHistoryInfo(MedicalHistoryInfoDTO dto) {
-         return medicalHistoryInfoRepository.save(medicalHistoryInfoFactory.create(dto));
+        return medicalHistoryInfoRepository.save(medicalHistoryInfoFactory.create(dto));
     }
 
     public List<MedicalHistoryInfo> getAllMedicalHistoryInfos() {
@@ -42,6 +42,10 @@ public class MedicalHistoryInfoService {
             throw new RuntimeException("Medical history info doesn't exist, therefore it could not be deleted!");
         }
         medicalHistoryInfoRepository.deleteById(id);
+    }
+
+    public Exception throwError(Exception e) {
+        return e;
     }
 
 }

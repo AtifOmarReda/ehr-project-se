@@ -10,6 +10,7 @@ public class GynecoObstetricCreator implements MedicalHistoryInfoCreator{
 
     @Override
     public MedicalHistoryInfo create(MedicalHistoryInfoDTO dto) {
+        System.out.println(dto);
         return GynecoObstetric.builder()
                      .dysmenorrhea(dto.getDysmenorrhea())
                      .dyspareunia(dto.getDyspareunia())
@@ -18,19 +19,19 @@ public class GynecoObstetricCreator implements MedicalHistoryInfoCreator{
                      .salpingitis(dto.getSalpingitis())
                      .urogenitalTuborculosis(dto.getUrogenitalTuborculosis())
                      .oralContraceptives(dto.getOralContraceptives())
-                     .IUD(dto.getIUD())
+                     .iud(dto.getIud())
                      .noteContraception(dto.getNoteContraception())
                      .duration(dto.getDuration())
                      .reportingFrequency(dto.getReportingFrequency())
                      .cycleLength(dto.getCycleLength())
                      .cycleNature(dto.getCycleNature())
                      .firstRules(dto.getFirstRules())
-                     .abortion(dto.getFirstRules())
-                     .c_section(dto.getC_section())
+                     .abortion(dto.getAbortion())
+                     .cSection(dto.getCSection())
                      .pregnancyDesire(dto.getPregnancyDesire())
-                     .GEU(dto.getGEU())
+                     .geu(dto.getGeu())
                      .previousPregnancies(dto.getPreviousPregnancies())
-                     .BCG(dto.getBCG())
+                     .bcg(dto.getBcg())
                      .type(dto.getType())
                      .build();
     }
@@ -45,7 +46,7 @@ public class GynecoObstetricCreator implements MedicalHistoryInfoCreator{
         gynecoObstetricExisting.setSalpingitis(dto.getSalpingitis());
         gynecoObstetricExisting.setUrogenitalTuborculosis(dto.getUrogenitalTuborculosis());
         gynecoObstetricExisting.setOralContraceptives(dto.getOralContraceptives());
-        gynecoObstetricExisting.setIUD(dto.getIUD());
+        gynecoObstetricExisting.setIud(dto.getIud());
         gynecoObstetricExisting.setNoteContraception(dto.getNoteContraception());
         gynecoObstetricExisting.setDuration(dto.getDuration());
         gynecoObstetricExisting.setReportingFrequency(dto.getReportingFrequency());
@@ -53,11 +54,11 @@ public class GynecoObstetricCreator implements MedicalHistoryInfoCreator{
         gynecoObstetricExisting.setCycleNature(dto.getCycleNature());
         gynecoObstetricExisting.setFirstRules(dto.getFirstRules());
         gynecoObstetricExisting.setAbortion(dto.getFirstRules());
-        gynecoObstetricExisting.setC_section(dto.getC_section());
+        gynecoObstetricExisting.setCSection(dto.getCSection());
         gynecoObstetricExisting.setPregnancyDesire(dto.getPregnancyDesire());
-        gynecoObstetricExisting.setGEU(dto.getGEU());
+        gynecoObstetricExisting.setGeu(dto.getGeu());
         gynecoObstetricExisting.setPreviousPregnancies(dto.getPreviousPregnancies());
-        gynecoObstetricExisting.setBCG(dto.getBCG());
+        gynecoObstetricExisting.setBcg(dto.getBcg());
     }
 
 }

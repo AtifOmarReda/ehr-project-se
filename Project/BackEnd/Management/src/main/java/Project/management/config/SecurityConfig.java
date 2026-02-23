@@ -50,6 +50,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         // Accès Public
                         .requestMatchers("/patients/**").authenticated()
+                        .requestMatchers("/medical-history-info/**").authenticated()
                         .anyRequest().permitAll()
                 );
         http.addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);

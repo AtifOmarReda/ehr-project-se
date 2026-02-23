@@ -5,6 +5,7 @@ import lombok.*;
 
 @Entity
 @Setter
+@Table(name = "medical_history_info")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class MedicalHistoryInfo {
 
