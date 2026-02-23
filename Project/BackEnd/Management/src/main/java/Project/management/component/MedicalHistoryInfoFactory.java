@@ -12,10 +12,12 @@ public class MedicalHistoryInfoFactory {
     GynecoObstetricCreator gynecoObstetricCreator = new GynecoObstetricCreator();
 
     public MedicalHistoryInfo create(MedicalHistoryInfoDTO dto) {
-        if (dto.getType() == MedicalHistoryInfoType.GYNECO_OBSETETRIC)
+        if (dto.getType() == MedicalHistoryInfoType.GYNECO_OBSETETRIC) {
             return gynecoObstetricCreator.create(dto);
-        else
+        }
+        else {
             return basicMedicalHistoryInfoCreator.create(dto);
+        }
     }
 
     public void update(MedicalHistoryInfo existing, MedicalHistoryInfoDTO dto) {

@@ -5,22 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c31c732c-594f-481e-b718-0feed871f06b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/BasicMedicalHistoryInfoCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/BasicMedicalHistoryInfoCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/Management-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/Management-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/ManagementApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/component/BasicMedicalHistoryInfoCreator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/component/GynecoObstetricCreator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/component/MedicalHistoryInfoCreator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/component/MedicalHistoryInfoFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/config/RedirectionConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/config/RestClientConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/config/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/controllers/MedicalHistoryInfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/controllers/PatientController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/dto/MedicalHistoryInfoDTO$MedicalHistoryInfoDTOBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/dto/MedicalHistoryInfoDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/dto/PatientDTO$PatientDTOBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/dto/PatientDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/BasicMedicalHistoryInfo$BasicMedicalHistoryInfoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/BasicMedicalHistoryInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/Country.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/FamilySituation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/GynecoObstetric$GynecoObstetricBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/GynecoObstetric.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/MedicalHistory$MedicalHistoryBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/MedicalHistory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/MedicalHistoryInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/MedicalHistoryInfoType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/Patient$PatientBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/Patient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/entities/Sexe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/exceptions/ErrorResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/exceptions/GlobalExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/repositories/MedicalHistoryInfoRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/repositories/PatientRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/security/JwtAuthenticationEntryPoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/security/JwtTokenFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/security/JwtTokenProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/services/MedicalHistoryInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/services/PatientService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/Project/management/services/RemoteBlacklistService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/classes/keystore.p12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/surefire-reports/Project.management.ManagementApplicationTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/surefire-reports/TEST-Project.management.ManagementApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/target/test-classes/Project/management/ManagementApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/GynecoObstetricCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/GynecoObstetricCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/MedicalHistoryInfoCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/MedicalHistoryInfoCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/MedicalHistoryInfoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/MedicalHistoryInfoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/MedicalHistoryInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/MedicalHistoryInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/BasicMedicalHistoryInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/BasicMedicalHistoryInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/dto/MedicalHistoryInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/dto/MedicalHistoryInfoDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/GynecoObstetric.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/GynecoObstetric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/MedicalHistoryInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/MedicalHistoryInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/repositories/MedicalHistoryInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/repositories/MedicalHistoryInfoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/repositories/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/repositories/PatientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/MedicalHistoryInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/MedicalHistoryInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/RemoteBlacklistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/RemoteBlacklistService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,44 +92,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.Login [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Login [clean,validate,compile,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Login [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Login [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Login [deploy].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Login [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Login [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Login [site].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Login [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Login [validate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Login [verify].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Management [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Management [install].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.LoginApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ManagementApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Work/GitProject/ehr-project-se/Project/BackEnd/Management&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.Login [clean,install].executor": "Run",
+    "Maven.Login [clean,validate,compile,install].executor": "Run",
+    "Maven.Login [clean].executor": "Run",
+    "Maven.Login [compile].executor": "Run",
+    "Maven.Login [deploy].executor": "Run",
+    "Maven.Login [install].executor": "Run",
+    "Maven.Login [package].executor": "Run",
+    "Maven.Login [site].executor": "Run",
+    "Maven.Login [test].executor": "Run",
+    "Maven.Login [validate].executor": "Run",
+    "Maven.Login [verify].executor": "Run",
+    "Maven.Management [clean].executor": "Run",
+    "Maven.Management [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.LoginApplication.executor": "Run",
+    "Spring Boot.ManagementApplication.executor": "Run",
+    "git-widget-placeholder": "Merging main",
+    "ignore.preview.features.used": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Work/GitProject/ehr-project-se/Project/BackEnd/Management",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -184,6 +222,7 @@
       <workItem from="1771768420322" duration="43000" />
       <workItem from="1771830418830" duration="838000" />
       <workItem from="1771831321446" duration="5976000" />
+      <workItem from="1771837678819" duration="327000" />
     </task>
     <servers />
   </component>

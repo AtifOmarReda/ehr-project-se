@@ -18,7 +18,6 @@ public class MedicalHistoryInfoDTO {
     @Size(max = 50)
     private String label;
 
-    @Size(max = 50)
     private MedicalHistoryInfoType type;
 
     private Boolean dysmenorrhea;
@@ -38,7 +37,7 @@ public class MedicalHistoryInfoDTO {
     private String oralContraceptives;
 
     @Size(max = 50)
-    private String IUD;
+    private String iud;
 
     @Size(max = 50)
     private String noteContraception;
@@ -61,18 +60,18 @@ public class MedicalHistoryInfoDTO {
     @Size(max = 50)
     private String abortion;
 
-    @Size(max = 50)
-    private String c_section;
+    @Size(max = 200)
+    private String cSection;
 
     @Size(max = 50)
     private String pregnancyDesire;
 
     @Size(max = 50)
-    private String GEU;
+    private String geu;
 
     @Size(max = 50)
     private String previousPregnancies;
 
-    private Boolean BCG;
+    private Boolean bcg;
 
 }

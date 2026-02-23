@@ -38,7 +38,7 @@ public class GynecoObstetric extends MedicalHistoryInfo {
     private String oralContraceptives;
 
     @Column(nullable = false, length = 50)
-    private String IUD;
+    private String iud;
 
     @Column(nullable = false, length = 50)
     private String noteContraception;
@@ -62,17 +62,17 @@ public class GynecoObstetric extends MedicalHistoryInfo {
     private String abortion;
 
     @Column(nullable = false, length = 50)
-    private String c_section;
+    private String cSection;
 
     @Column(nullable = false, length = 50)
     private String pregnancyDesire;
 
     @Column(nullable = false, length = 50)
-    private String GEU;
+    private String geu;
 
     @Column(nullable = false, length = 50)
     private String previousPregnancies;
 
     @Column(nullable = false, length = 50)
-    private Boolean BCG;
+    private Boolean bcg;
 }
