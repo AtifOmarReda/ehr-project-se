@@ -1,5 +1,6 @@
 package Project.management.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -61,6 +62,7 @@ public class GynecoObstetric extends MedicalHistoryInfo {
     @Column(nullable = false, length = 50)
     private String abortion;
 
+    @JsonProperty("cSection")
     @Column(nullable = false, length = 50)
     private String cSection;
 
