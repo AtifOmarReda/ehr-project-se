@@ -76,4 +76,7 @@ public class Patient {
     @OneToMany(mappedBy = "patient")
     private List<MedicalHistoryInfo> medicalHistoryInfos;
 
+    @OneToMany(mappedBy = "patient")
+    private List<Consultation> consultations;
+
 }
