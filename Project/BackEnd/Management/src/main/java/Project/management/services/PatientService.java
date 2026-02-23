@@ -68,7 +68,6 @@ public class PatientService {
             existing.setTel1(dto.getTel1());
             existing.setTel2(dto.getTel2());
             existing.setEmail(dto.getEmail());
-            // ... mettre à jour les autres champs
             return patientRepository.save(existing);
         }).orElseThrow(() -> new RuntimeException("Patient not found"));
     }

@@ -1,0 +1,5 @@
+package Project.management.entities;
+
+public enum MedicalHistoryInfoType {
+    ALLERGY, GYNECO_OBSETETRIC, HYGIENE_DIETETIC, PARACLINICAL, PREVIOUSILLNESS, SEXUAL_ACTIVITY, SURGERY, UROGENITAL
+}
