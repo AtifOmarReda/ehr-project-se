@@ -1,12 +1,7 @@
 package Project.management.dto;
 
 import Project.management.entities.MedicalHistoryInfoType;
-import Project.management.entities.Patient;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.persistence.Column;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

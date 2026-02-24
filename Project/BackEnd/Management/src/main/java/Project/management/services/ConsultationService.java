@@ -1,7 +1,6 @@
 package Project.management.services;
 
 import Project.management.dto.ConsultationDTO;
-import Project.management.dto.PatientDTO;
 import Project.management.entities.Consultation;
 import Project.management.entities.Patient;
 import Project.management.repositories.ConsultationRepository;

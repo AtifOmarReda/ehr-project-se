@@ -11,19 +11,20 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.JoinColumn;
 import lombok.Setter;
 
-// Abstract class used for more specific MedicalHistoryInfo types
+
+// Abstract class used for more specific ConsultationItem types
 
 @Entity
-@Table(name = "medical_history_info")
+@Table(name = "consultation_item")
 @Setter
 @Inheritance(strategy = InheritanceType.JOINED)
-public abstract class MedicalHistoryInfo {
+public abstract class ConsultationItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "patient_id")
-    private Patient patient;
+    @JoinColumn(name = "consultationId")
+    private Consultation consultation;
 }

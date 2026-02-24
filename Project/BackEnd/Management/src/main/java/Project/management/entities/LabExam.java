@@ -5,26 +5,33 @@ import jakarta.persistence.Table;
 import jakarta.persistence.Column;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.EnumType;
+import jakarta.persistence.OneToMany;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 
+import java.time.LocalDate;
+import java.util.List;
+
 @Entity
-@Table(name = "basic_medical_history_info")
+@Table(name = "lab_exam")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BasicMedicalHistoryInfo extends MedicalHistoryInfo {
+public class LabExam extends ConsultationItem{
 
     @Column(nullable = false, length = 50)
-    private String label;
+    private LocalDate date;
+
+    @OneToMany(mappedBy = "lab_exam")
+    private List<LabExamItem> labExamItems;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 50)
-    private MedicalHistoryInfoType type;
+    private ConsultationItemType type;
 
 }

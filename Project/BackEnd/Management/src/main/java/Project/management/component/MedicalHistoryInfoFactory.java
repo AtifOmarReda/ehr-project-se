@@ -6,6 +6,12 @@ import Project.management.entities.MedicalHistoryInfoType;
 import Project.management.entities.Patient;
 import org.springframework.stereotype.Component;
 
+
+/*
+    Used factory to create multiple types of similar entities, specifically for more complex ones
+    Using Enum of type MedicalHistoryInfo to choose specific assembler capable of creating and updating entities
+    No need to throw an Exception because Spring Boot by default doesn't allow non existing Enum values
+*/
 @Component
 public class MedicalHistoryInfoFactory {
 

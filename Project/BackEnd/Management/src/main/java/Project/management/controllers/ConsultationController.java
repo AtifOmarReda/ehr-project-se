@@ -1,11 +1,8 @@
 package Project.management.controllers;
 
 import Project.management.dto.ConsultationDTO;
-import Project.management.dto.MedicalHistoryInfoDTO;
 import Project.management.entities.Consultation;
-import Project.management.entities.MedicalHistoryInfo;
 import Project.management.services.ConsultationService;
-import Project.management.services.MedicalHistoryInfoService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
