@@ -6,7 +6,6 @@ import io.jsonwebtoken.security.Keys;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
 import java.security.Key;
@@ -28,13 +27,19 @@ public class JwtTokenProvider {
         return Keys.hmacShaKeyFor(jwtSecret.getBytes(StandardCharsets.UTF_8));
     }
 
-    public String generateAccessToken(Authentication authentication) {
-        return generateAccessTokenFromUsername(authentication.getName());
-    }
-
-    public String generateAccessTokenFromUsername(String username) {
-        return Jwts.builder().setSubject(username).setId(UUID.randomUUID().toString()) // jti
-                .setIssuedAt(new Date()).setExpiration(new Date(System.currentTimeMillis() + accessTokenExpirationMs)).signWith(getSigningKey(), SignatureAlgorithm.HS256).compact();
+    public String generateAccessTokenFromUsernameAndUserId(String username, Long userId, String role, Boolean isDoctor) {
+        return Jwts.builder()
+                .setSubject(username)
+                .setId(UUID.randomUUID().toString()) // jti
+                // --- Ajout de userIdm role et isDoctor ---
+                .claim("userId", userId)
+                .claim("role", role)
+                .claim("isDoctor", isDoctor)
+                // -------------------------
+                .setIssuedAt(new Date())
+                .setExpiration(new Date(System.currentTimeMillis() + accessTokenExpirationMs))
+                .signWith(getSigningKey(), SignatureAlgorithm.HS256)
+                .compact();
     }
 
     public String resolveToken(HttpServletRequest request) {

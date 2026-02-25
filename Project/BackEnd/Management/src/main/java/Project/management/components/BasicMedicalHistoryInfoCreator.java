@@ -1,8 +1,7 @@
-package Project.management.component;
+package Project.management.components;
 
 import Project.management.dto.MedicalHistoryInfoDTO;
 import Project.management.entities.BasicMedicalHistoryInfo;
-import Project.management.entities.GynecoObstetric;
 import Project.management.entities.MedicalHistoryInfo;
 import Project.management.entities.Patient;
 import org.springframework.stereotype.Component;

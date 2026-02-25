@@ -58,9 +58,9 @@ public class AuthController {
             Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
             SecurityContextHolder.getContext().setAuthentication(authentication);
             User user = userRepository.findByUsername(loginRequest.getUsername()).orElseThrow(() -> new AuthenticationFailedException("Username or password is incorrect"));
-            String accessToken = jwtTokenProvider.generateAccessToken(authentication);
+            String accessToken = jwtTokenProvider.generateAccessTokenFromUsernameAndUserId(authentication.getName(), user.getId(), user.getRole().toString(), user.getIsDoctor());
             RefreshToken refreshToken = refreshTokenService.createRefreshToken(user);
-            return ResponseEntity.ok(new JwtAuthenticationResponse(accessToken, refreshToken.getToken()));
+            return ResponseEntity.ok(new JwtAuthenticationResponse(accessToken, refreshToken.getRefreshToken()));
         } catch (BadCredentialsException ex) {
             throw new AuthenticationFailedException("Username or password is incorrect");
         }
@@ -69,15 +69,15 @@ public class AuthController {
     @PostMapping("/refresh")
     public ResponseEntity<?> refreshToken(@RequestBody RefreshRequest request) {
         String refreshToken = request.getRefreshToken();
-        RefreshToken token = refreshTokenRepository.findByToken(refreshToken).orElseThrow(() -> new InvalidRefreshTokenException("Refresh token is invalid or expired"));
+        RefreshToken token = refreshTokenRepository.findByRefreshToken(refreshToken).orElseThrow(() -> new InvalidRefreshTokenException("Refresh token is invalid or expired"));
         if (refreshTokenService.isExpired(token)) {
             throw new InvalidRefreshTokenException("Refresh token expired");
         }
         User user = token.getUser();
         refreshTokenRepository.delete(token);
         RefreshToken newToken = refreshTokenService.createRefreshToken(user);
-        String accessToken = jwtTokenProvider.generateAccessTokenFromUsername(user.getUsername());
-        return ResponseEntity.ok(new JwtAuthenticationResponse(accessToken, newToken.getToken()));
+        String accessToken = jwtTokenProvider.generateAccessTokenFromUsernameAndUserId(user.getUsername(), user.getId(), user.getRole().toString(), user.getIsDoctor());
+        return ResponseEntity.ok(new JwtAuthenticationResponse(accessToken, newToken.getRefreshToken()));
     }
 
     @PostMapping("/logout")

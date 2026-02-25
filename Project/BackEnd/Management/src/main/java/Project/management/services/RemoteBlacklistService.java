@@ -13,7 +13,7 @@ public class RemoteBlacklistService {
     @Value("${services.auth.url}")
     private String authServiceBaseUrl;
 
-    @Value("${services.auth.check-blacklist-endpoint}")
+    @Value("${services.auth.endpoints.check-blacklist-endpoint}")
     private String blacklistEndpoint;
 
     public RemoteBlacklistService(RestTemplate restTemplate) {

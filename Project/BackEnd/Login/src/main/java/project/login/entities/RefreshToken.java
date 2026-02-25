@@ -35,14 +35,14 @@ public class RefreshToken {
     @EqualsAndHashCode.Include
     private Long id;
 
-    @OneToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;
-
-    @Column(name = "token", nullable = false, unique = true)
-    private String token;
+    @Column(name = "refresh_token", nullable = false, unique = true)
+    private String refreshToken;
 
     @Column(name = "expiry_date", nullable = false)
     private Instant expiryDate;
+
+    @OneToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
 
 }

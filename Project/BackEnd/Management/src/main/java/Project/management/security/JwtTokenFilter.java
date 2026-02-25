@@ -31,8 +31,12 @@ public class JwtTokenFilter extends OncePerRequestFilter {
                 return;
             }
             if (jwtTokenProvider.validateToken(jwt)) {
+                Long userId = jwtTokenProvider.getUserIdFromToken(jwt);
                 String username = jwtTokenProvider.getUsernameFromToken(jwt);
-                UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(username, null, new ArrayList<>());
+                String role = jwtTokenProvider.getRoleFromToken(jwt);
+                Boolean isDoctor = jwtTokenProvider.getIsDoctorFromToken(jwt);
+                UserPrincipal principal = new UserPrincipal(userId, username, role, isDoctor != null && isDoctor);
+                UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(principal, null, new ArrayList<>());
                 SecurityContextHolder.getContext().setAuthentication(authentication);
             }
         }

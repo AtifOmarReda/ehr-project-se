@@ -2,6 +2,7 @@ package Project.management.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -15,6 +16,7 @@ import lombok.Setter;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -45,5 +47,9 @@ public class Appointment {
     @JoinColumn(name = "id_patient", nullable = false)
     @JsonBackReference
     private Patient patient;
+
+    @Column(name = "id_user", nullable = false)
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    private Long userId;
 
 }

@@ -1,4 +1,4 @@
-package Project.management.component;
+package Project.management.components;
 
 import Project.management.dto.MedicalHistoryInfoDTO;
 import Project.management.entities.GynecoObstetric;

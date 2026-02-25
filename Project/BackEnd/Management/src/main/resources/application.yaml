@@ -6,6 +6,8 @@ server:
     key-store-password: postgres
     key-store-type: PKCS12
     key-alias: springboot
+  error:
+    include-message: always
 
 spring:
   datasource:
@@ -20,7 +22,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: https://localhost:9081/auth # URL de ton micro-service d'auth
+          issuer-uri: https://localhost:9081/auth
 
 jwt:
   secret: ${JWT_SECRET}
@@ -28,4 +30,6 @@ jwt:
 services:
   auth:
     url: https://localhost:9081/internal/auth
-    check-blacklist-endpoint: /is-blacklisted
+    endpoints:
+      check-blacklist-endpoint: /is-blacklisted
+      check-is-user-doctor-endpoint: /is-user-doctor

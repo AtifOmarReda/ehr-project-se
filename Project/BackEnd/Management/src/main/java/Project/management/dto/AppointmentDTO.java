@@ -1,9 +1,6 @@
 package Project.management.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -32,5 +29,8 @@ public class AppointmentDTO {
 
     @NotNull(message = "Ce champ est obligatoire")
     private Long patient;
+
+//    @NotNull(groups = UserValidationGroup.class, message = "Ce champ est obligatoire")
+    private Long userId;
 
 }
