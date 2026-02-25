@@ -3,8 +3,11 @@ package Project.management.entities;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.persistence.Column;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.EnumType;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.JoinColumn;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.NoArgsConstructor;
@@ -12,19 +15,26 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 
 @Entity
-@Table(name = "basic_medical_history_info")
+@Table(name = "medication")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BasicMedicalHistoryInfo extends MedicalHistoryInfo {
+public class Medication {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @Column(nullable = false, length = 50)
     private String label;
 
-    @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 50)
-    private MedicalHistoryInfoType type;
+    private Long dailyIntake;
+
+    @ManyToOne
+    @JoinColumn(name = "prescription_id")
+    private Prescription prescription;
 
 }

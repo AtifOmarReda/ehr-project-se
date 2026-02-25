@@ -1,4 +1,4 @@
-package Project.management.components;
+package Project.management.components.assemblers;
 
 import Project.management.dto.MedicalHistoryInfoDTO;
 import Project.management.entities.GynecoObstetric;
@@ -7,7 +7,7 @@ import Project.management.entities.Patient;
 import org.springframework.stereotype.Component;
 
 @Component
-public class GynecoObstetricCreator implements MedicalHistoryInfoCreator{
+public class GynecoObstetricAssembler implements MedicalHistoryInfoAssembler {
 
     @Override
     public MedicalHistoryInfo create(MedicalHistoryInfoDTO dto, Patient patient) {

@@ -86,6 +86,9 @@ public class Patient {
     private List<MedicalHistoryInfo> medicalHistoryInfos;
 
     @OneToMany(mappedBy = "patient")
+    private List<Consultation> consultations;
+
+    @OneToMany(mappedBy = "patient")
     @JsonManagedReference
     private List<Appointment> appointments;
 

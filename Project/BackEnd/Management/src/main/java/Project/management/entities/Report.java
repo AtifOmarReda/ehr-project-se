@@ -12,19 +12,19 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 
 @Entity
-@Table(name = "basic_medical_history_info")
+@Table(name = "report")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BasicMedicalHistoryInfo extends MedicalHistoryInfo {
+public class Report extends ConsultationItem {
 
     @Column(nullable = false, length = 50)
-    private String label;
+    private String documentUrl;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 50)
-    private MedicalHistoryInfoType type;
+    private ConsultationItemType type;
 
 }

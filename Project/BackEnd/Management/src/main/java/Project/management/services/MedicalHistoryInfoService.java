@@ -1,6 +1,6 @@
 package Project.management.services;
 
-import Project.management.components.MedicalHistoryInfoFactory;
+import Project.management.components.factories.MedicalHistoryInfoFactory;
 import Project.management.dto.MedicalHistoryInfoDTO;
 import Project.management.entities.MedicalHistoryInfo;
 import Project.management.entities.Patient;
