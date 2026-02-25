@@ -1,11 +1,6 @@
 package Project.management.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import jakarta.persistence.Column;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.NoArgsConstructor;
@@ -23,10 +18,10 @@ import java.util.List;
 @Builder
 public class Prescription extends ConsultationItem{
 
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private LocalDate date;
 
-    @OneToMany(mappedBy = "prescription")
+    @OneToMany(mappedBy = "prescription", cascade = CascadeType.ALL)
     private List<Medication> medications;
 
     @Enumerated(EnumType.STRING)

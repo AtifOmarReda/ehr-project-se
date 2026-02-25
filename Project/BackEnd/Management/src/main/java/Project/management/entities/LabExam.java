@@ -1,11 +1,6 @@
 package Project.management.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import jakarta.persistence.Column;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.NoArgsConstructor;
@@ -24,10 +19,10 @@ import java.util.List;
 @Builder
 public class LabExam extends ConsultationItem{
 
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private LocalDate date;
 
-    @OneToMany(mappedBy = "lab_exam")
+    @OneToMany(mappedBy = "lab_exam",  cascade = CascadeType.ALL)
     private List<LabExamItem> labExamItems;
 
     @Enumerated(EnumType.STRING)

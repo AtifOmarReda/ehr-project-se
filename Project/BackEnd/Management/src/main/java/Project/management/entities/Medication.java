@@ -28,10 +28,10 @@ public class Medication {
     private Long id;
 
     @Column(nullable = false, length = 50)
-    private String name;
+    private String label;
 
     @Column(nullable = false, length = 50)
-    private Long dailtyIntake;
+    private Long dailyIntake;
 
     @ManyToOne
     @JoinColumn(name = "prescription_id")
