@@ -1,0 +1,35 @@
+server:
+  port: 9082 # Changement du port (optionnel, mais courant pour le HTTPS)
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: postgres
+    key-store-type: PKCS12
+    key-alias: springboot
+  error:
+    include-message: always
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/login
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://localhost:9081/auth
+
+jwt:
+  secret: ${JWT_SECRET}
+
+services:
+  auth:
+    url: https://localhost:9081/internal/auth
+    endpoints:
+      check-blacklist-endpoint: /is-blacklisted
+      check-is-user-doctor-endpoint: /is-user-doctor
