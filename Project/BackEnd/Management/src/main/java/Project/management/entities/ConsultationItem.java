@@ -9,6 +9,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.JoinColumn;
+import lombok.Getter;
 import lombok.Setter;
 
 
@@ -17,6 +18,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "consultation_item")
 @Setter
+@Getter
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class ConsultationItem {
 

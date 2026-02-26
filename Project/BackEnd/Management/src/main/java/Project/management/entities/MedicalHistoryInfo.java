@@ -9,6 +9,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.JoinColumn;
+import lombok.Getter;
 import lombok.Setter;
 
 // Abstract class used for more specific MedicalHistoryInfo types
@@ -16,6 +17,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "medical_history_info")
 @Setter
+@Getter
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class MedicalHistoryInfo {
 
