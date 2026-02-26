@@ -8,6 +8,7 @@ import org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory;
 import org.apache.hc.client5.http.ssl.SSLConnectionSocketFactoryBuilder;
 import org.apache.hc.client5.http.ssl.TrustAllStrategy;
 import org.apache.hc.core5.ssl.SSLContextBuilder;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
@@ -21,6 +22,9 @@ import org.apache.hc.client5.http.ssl.NoopHostnameVerifier;
 
 @Configuration
 public class RestClientConfig {
+
+    @Value("${app.gateway-secret}")
+    private String gatewaySecretValue;
 
 //    @Bean
 //    public RestTemplate restTemplate() throws KeyStoreException, NoSuchAlgorithmException, KeyManagementException {
@@ -47,7 +51,6 @@ public class RestClientConfig {
                 .setSslContext(SSLContextBuilder.create()
                         .loadTrustMaterial(TrustAllStrategy.INSTANCE)
                         .build())
-                // AJOUT ICI : On ignore la vérification du nom d'hôte (localhost vs test)
                 .setHostnameVerifier(NoopHostnameVerifier.INSTANCE)
                 .build();
         final HttpClientConnectionManager cm = PoolingHttpClientConnectionManagerBuilder.create()
@@ -56,7 +59,9 @@ public class RestClientConfig {
         CloseableHttpClient httpClient = HttpClients.custom()
                 .setConnectionManager(cm)
                 .build();
-        return new RestTemplate(new HttpComponentsClientHttpRequestFactory(httpClient));
+        RestTemplate restTemplate = new RestTemplate(new HttpComponentsClientHttpRequestFactory(httpClient));
+        restTemplate.getInterceptors().add(new GatewayHeaderInterceptor(gatewaySecretValue));
+        return restTemplate;
     }
 
 }

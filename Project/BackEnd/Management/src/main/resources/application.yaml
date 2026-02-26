@@ -33,3 +33,6 @@ services:
     endpoints:
       check-blacklist-endpoint: /is-blacklisted
       check-is-user-doctor-endpoint: /is-user-doctor
+
+app:
+  gateway-secret: ${GATEWAY_SECRET:MonSuperSecret1234}

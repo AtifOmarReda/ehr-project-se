@@ -5,33 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c31c732c-594f-481e-b718-0feed871f06b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/login/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/login/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/login/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/dto/UserValidationGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/exceptions/ValidationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/UserPrincipal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/RemoteIsDoctorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/GatewayHeaderInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project/login/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/controllers/InternalAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/controllers/InternalAuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/entities/RefreshToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/entities/RefreshToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/repositories/RefreshTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/repositories/RefreshTokenRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/security/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/login/services/RefreshTokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/login/services/RefreshTokenService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/BasicMedicalHistoryInfoCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/components/BasicMedicalHistoryInfoCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/GynecoObstetricCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/components/GynecoObstetricCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/MedicalHistoryInfoCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/components/MedicalHistoryInfoCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/component/MedicalHistoryInfoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/components/MedicalHistoryInfoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/dto/AppointmentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/dto/AppointmentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/entities/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/RestClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/RestClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/ConsultationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/controllers/ConsultationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/security/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/AppointmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/MedicalHistoryInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/MedicalHistoryInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/RemoteBlacklistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/java/Project/management/services/RemoteBlacklistService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Management/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,17 +69,20 @@
     &quot;Maven.Login [verify].executor&quot;: &quot;Run&quot;,
     &quot;Maven.Management [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.Management [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gateway [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gateway [install].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.LoginApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.ManagementApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Work/GitProject/ehr-project-se/Project/BackEnd/Management&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Work/GitProject/ehr-project-se/Project/BackEnd/Gateway&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -100,6 +91,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -107,11 +99,27 @@
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ManagementApplication">
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="project.gateway.GatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="Login" />
@@ -136,6 +144,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ManagementApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +209,13 @@
       <workItem from="1771843810468" duration="9371000" />
       <workItem from="1771916511607" duration="20698000" />
       <workItem from="1772002160194" duration="20813000" />
+      <workItem from="1772024506983" duration="243000" />
+      <workItem from="1772024797534" duration="923000" />
+      <workItem from="1772026023358" duration="628000" />
+      <workItem from="1772089137530" duration="5582000" />
+      <workItem from="1772094816719" duration="5053000" />
+      <workItem from="1772099951821" duration="1845000" />
+      <workItem from="1772102028807" duration="7698000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,27 @@
+server:
+  port: 9080
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: postgres
+    key-store-type: PKCS12
+    key-alias: springboot
+
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - AddRequestHeader=X-Gateway-Secret, MonSuperSecret1234
+      httpclient:
+        ssl:
+          useInsecureTrustManager: true
+      routes:
+        - id: auth-service
+          uri: https://localhost:9081
+          predicates:
+            - Path=/auth/**, /internal/auth/**
+
+        - id: management-service
+          uri: https://localhost:9082
+          predicates:
+            - Path=/appointments/**, /patients/**, /medical-history-info/**, /consultation/**

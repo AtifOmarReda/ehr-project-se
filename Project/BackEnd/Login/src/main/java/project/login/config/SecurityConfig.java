@@ -1,5 +1,6 @@
 package project.login.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -22,6 +23,9 @@ public class SecurityConfig {
 
     private final JwtAuthenticationEntryPoint unauthorizedHandler;
     private final JwtTokenFilter jwtTokenFilter;
+
+    @Value("${app.gateway-secret}")
+    private String gatewaySecretValue;
 
     public SecurityConfig(JwtAuthenticationEntryPoint unauthorizedHandler, JwtTokenFilter jwtTokenFilter) {
         this.unauthorizedHandler = unauthorizedHandler;
@@ -51,27 +55,31 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
+                .addFilterBefore((request, response, chain) -> {
+                    jakarta.servlet.http.HttpServletRequest req = (jakarta.servlet.http.HttpServletRequest) request;
+                    jakarta.servlet.http.HttpServletResponse res = (jakarta.servlet.http.HttpServletResponse) response;
+                    String gatewaySecret = req.getHeader("X-Gateway-Secret");
+                    if (!gatewaySecretValue.equals(gatewaySecret)) {
+                        res.setStatus(jakarta.servlet.http.HttpServletResponse.SC_FORBIDDEN);
+                        res.getWriter().write("Direct access is not allowed");
+                        return;
+                    }
+                    chain.doFilter(request, response);
+                }, UsernamePasswordAuthenticationFilter.class)
                 .requiresChannel(channel -> channel.anyRequest().requiresSecure())
                 .portMapper(portMapper -> portMapper.http(8081).mapsTo(9081))
                 .csrf(csrf -> csrf.disable())
                 .exceptionHandling(ex -> ex.authenticationEntryPoint(unauthorizedHandler))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                // Gestion des autorisations
                 .authorizeHttpRequests(auth -> auth
-                        // Accès Interne (Appel depuis le micro-service Management)
                         .requestMatchers("/internal/auth/**").permitAll()
-                        // Accès Public (Login et Refresh)
                         .requestMatchers("/auth/login", "/auth/refresh").permitAll()
-                        // Accès Authentifié (Logout)
                         .requestMatchers("/auth/logout").authenticated()
-                        // Accès par Rôles
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .requestMatchers("/doctor/**").hasRole("DOCTOR")
                         .requestMatchers("/reception/**").hasRole("RECEPTIONIST")
-                        // Accès Partagés
                         .requestMatchers("/medical-records/**").hasAnyRole("DOCTOR", "ADMIN")
                         .requestMatchers("/appointments/**").hasAnyRole("RECEPTIONIST", "DOCTOR", "ADMIN")
-                        // Tout le reste doit être authentifié
                         .anyRequest().authenticated()
                 );
         http.addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);

@@ -21,3 +21,6 @@ jwt:
   secret: ${JWT_SECRET}
   access-expiration-ms: 900000      # 15 minutes
   refresh-expiration-ms: 1209600000 # 14 jours
+
+app:
+  gateway-secret: ${GATEWAY_SECRET:MonSuperSecret1234}

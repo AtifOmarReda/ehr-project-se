@@ -12,7 +12,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
-import java.util.ArrayList;
+
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+
+import java.util.Collections;
 
 @Component
 @RequiredArgsConstructor
@@ -20,6 +23,28 @@ public class JwtTokenFilter extends OncePerRequestFilter {
 
     private final JwtTokenProvider jwtTokenProvider;
     private final RemoteBlacklistService blacklistService;
+
+//    @Override
+//    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+//        String authHeader = request.getHeader("Authorization");
+//        if (authHeader != null && authHeader.startsWith("Bearer ")) {
+//            String jwt = authHeader.substring(7);
+//            if (blacklistService.isTokenBlacklisted(jwt)) {
+//                response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+//                return;
+//            }
+//            if (jwtTokenProvider.validateToken(jwt)) {
+//                Long userId = jwtTokenProvider.getUserIdFromToken(jwt);
+//                String username = jwtTokenProvider.getUsernameFromToken(jwt);
+//                String role = jwtTokenProvider.getRoleFromToken(jwt);
+//                Boolean isDoctor = jwtTokenProvider.getIsDoctorFromToken(jwt);
+//                UserPrincipal principal = new UserPrincipal(userId, username, role, isDoctor != null && isDoctor);
+//                UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(principal, null, new ArrayList<>());
+//                SecurityContextHolder.getContext().setAuthentication(authentication);
+//            }
+//        }
+//        filterChain.doFilter(request, response);
+//    }
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
@@ -35,8 +60,12 @@ public class JwtTokenFilter extends OncePerRequestFilter {
                 String username = jwtTokenProvider.getUsernameFromToken(jwt);
                 String role = jwtTokenProvider.getRoleFromToken(jwt);
                 Boolean isDoctor = jwtTokenProvider.getIsDoctorFromToken(jwt);
+                String formattedRole = role.startsWith("ROLE_") ? role : "ROLE_" + role;
+                SimpleGrantedAuthority authority = new SimpleGrantedAuthority(formattedRole);
                 UserPrincipal principal = new UserPrincipal(userId, username, role, isDoctor != null && isDoctor);
-                UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(principal, null, new ArrayList<>());
+                // On remplace ArrayList par la liste contenant l'autorité
+                UsernamePasswordAuthenticationToken authentication =
+                        new UsernamePasswordAuthenticationToken(principal, null, Collections.singletonList(authority));
                 SecurityContextHolder.getContext().setAuthentication(authentication);
             }
         }
